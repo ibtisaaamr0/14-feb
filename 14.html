@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: rgb(171, 60, 60);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .dashboard {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .next-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff4d6d;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+
+        .next-btn:hover {
+            background: #ff1e50;
+            transform: scale(1.1);
+        }
+
+        .valentine-section {
+            display: none;
+        }
+
+        .options {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s;
+        }
+
+        .yes-btn {
+            background: #ff4d6d;
+        }
+
+        .yes-btn:hover {
+            background: #ff1e50;
+            transform: scale(1.1);
+        }
+
+        .no-btn {
+            background: #333;
+        }
+
+        .no-btn:hover {
+            background: #000;
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function showValentineSection() {
+            document.querySelector('.dashboard').style.display = 'none';
+            document.querySelector('.valentine-section').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <h1> To Summi 💖</h1>
+            <p>Before asking anything , I just wanted to say that I Love You Summaiya and there could not have been a better woman as a partner than you
+                ❤️❤️.Even if I die or something happens and we are not togaather, i will always love you no matter what, Thank you for always forgiving me and thank you for just existing actually, IDK why i love you but ik that I love you more than anyone else in this world and I never want to loose you ❤️❤️❤️❤️  😊</p>
+            <button class="next-btn" onclick="showValentineSection()">Next ➡</button>
+        </div>
+        <div class="valentine-section">
+            <h1>Will You Be My Valentine ?</h1>
+            <div class="options">
+                <a href="#" class="btn yes-btn">Yes, Baby! ❤️</a>
+                <a href="#" class="btn no-btn">No, F*** Off 😢</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
